@@ -1,0 +1,10 @@
+.footer {
+    color: var(--letra-products-title);
+    font-size: 1.3rem;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    text-align: center;
+}
+.footer p  {
+    padding-top: .5%;
+}
