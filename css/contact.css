@@ -56,9 +56,9 @@
     padding-left: 2%;
 }
 .contact__input-nombre::placeholder, .contact__textarea-mensaje::placeholder {
+    color: var(--letra-busqueda);
     font-size: 1rem;
     margin: auto;
-    padding-left: 2%;
     text-align: start;
 }
 .contact__textarea-mensaje {
