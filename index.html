@@ -24,13 +24,13 @@
             <div class="header__container container">
                 <div class="header__nav">
                     <div class="header__busqueda__container">
-                        <img src="assets/Logo.svg" class="header__logo">
+                        <a href="index.html" class="header__logo"><img src="assets/Logo.svg" ></a>
                         <input class="header__busqueda" type="text" placeholder="¿Qué deseas buscar?">
                         <img src="assets/bx-search.svg" class="header__lupa" alt="">
                     </div>
                 </div>
                 <div class="header__login">
-                    <button type="submit" class="header__login__button" ><a href="#">Login</a></button>
+                    <button type="submit" class="header__login__button" ><a href="login.html">Login</a></button>
                 </div>
             </div>
         </section>
@@ -39,21 +39,21 @@
             <div class="banner__container container">
                 <h1 class="banner__title">Agosto Promocional</h1>
                 <h3 class="banner__subtitle">Productos seleccionados con 33% de descuento</h3>
-                <button type="submit" class="banner__button" ><a href="#">Ver Consolas</a></button>
+                <button type="submit" class="banner__button" ><a href="#consolas">Ver Consolas</a></button>
             </div>
         </section>
 
         <section class="products">
             <div class="products__container container">
-                <div class="products__category">
+                <div class="products__category" id="starwars" >
                     <div class="products__title">
                         <h2>Star Wars</h2>
                         <div class="products__button__container">
-                            <button type="submit" class="products__title__button" ><a href="#">Ver Todo </a></button>
+                            <button type="submit" class="products__title__button" ><a href="products.html">Ver Todo </a></button>
                             <img src="assets/flecha.svg" class="products__title__button_img">
                         </div>
                     </div>
-                    <div class="products__body">
+                    <div class="products__body" data-starwars>
                         <div class="products__info__container">
                             <img src="assets/casco.png" alt="">
                             <div class="products__info">
@@ -104,15 +104,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="products__category">
+                <div class="products__category" id="consolas">
                     <div class="products__title">
-                        <h2>Star Wars</h2>
+                        <h2>Consolas</h2>
                         <div class="products__button__container">
-                            <button type="submit" class="products__title__button" ><a href="#">Ver Todo </a></button>
+                            <button type="submit" class="products__title__button" ><a href="products.html">Ver Todo </a></button>
                             <img src="assets/flecha.svg" class="products__title__button_img">
                         </div>
                     </div>
-                    <div class="products__body">
+                    <div class="products__body" data-consolas>
                         <div class="products__info__container">
                             <img src="assets/casco.png" alt="">
                             <div class="products__info">
@@ -163,15 +163,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="products__category">
+                <div class="products__category" id="diversos">
                     <div class="products__title">
-                        <h2>Star Wars</h2>
+                        <h2>Diversos</h2>
                         <div class="products__button__container">
-                            <button type="submit" class="products__title__button" ><a href="#">Ver Todo </a></button>
+                            <button type="submit" class="products__title__button" ><a href="products.html">Ver Todo </a></button>
                             <img src="assets/flecha.svg" class="products__title__button_img">
                         </div>
                     </div>
-                    <div class="products__body">
+                    <div class="products__body" data-diversos>
                         <div class="products__info__container">
                             <img src="assets/casco.png" alt="">
                             <div class="products__info">
@@ -254,6 +254,7 @@
             </div>
         </section>
     </div>
+    <script src="js/controller/crearLinea.js" type="module"></script>
 </body>
 
 </html>

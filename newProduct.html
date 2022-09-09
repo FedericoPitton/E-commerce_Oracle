@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bases.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/newProduct.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
 
-    <title>Login</title>
+    <title>Agregar Producto</title>
 </head>
 
 <body>
@@ -28,20 +29,25 @@
                         <img src="assets/bx-search.svg" class="header__lupa" alt="">
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="login">
-            <div class="login__container container">
-                <div class="login__form">
-                    <h4>Iniciar Sesion</h4>
-                    <input class="login__email" type="email" placeholder="Escriba su correo electrónico">
-                    <input class="login__password" type="password" placeholder="Esriba su contraseña">
-                    <button type="submit" class="login__button" ><a href="#">Entrar</a></button>
+                <div class="header__login">
+                    <button type="submit" class="header__admin__button" ><a href="#">Menu Administrador</a></button>
                 </div>
             </div>
-
         </section>
 
+        <section class="newProduct">
+            
+            <form class="newProduct__form" data-form>
+                <h4>Agregar nuevo Producto</h4>
+                <input class="newProduct__img" type="text" placeholder="URL de imagen" data-img>
+                <input class="newProduct__category" type="text" placeholder="Categoria" data-category>
+                <input class="newProduct__name" type="text" placeholder="Nombre" data-name>
+                <input class="newProduct__price" type="text" placeholder="Precio" data-price>
+                <textarea class="newProduct__descripcion" type="text" cols="30" rows="10" placeholder="Descripcion" data-description></textarea>
+                <button type="submit" class="newProduct__button" >Agregar Producto</button>
+            </form>
+
+        </section>
         <section class="contact">
             <div class="contact__container container">
                 <div class="contact__info">
@@ -71,6 +77,8 @@
             </div>
         </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/controller/crearProducto.js"></script>
 </body>
 
 </html>

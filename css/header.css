@@ -70,3 +70,15 @@
     padding-top: 5%;
     text-decoration-style: none;
 }
+.header__admin__button {
+    background: var(--background-blanco);
+    border: 1px solid var(--boton-login);
+    color:  var(--boton-login);
+    font-size: 1.3rem;
+    min-height: 100%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    text-decoration-style: none;
+}
