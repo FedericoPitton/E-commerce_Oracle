@@ -1,4 +1,7 @@
-import  {productServices} from '../services/product.services.js'
+import  {productServices} from '../services/product.services.js';
+
+const url = new URL(window.location);
+const categoryUrl = url.search.substring(1);
 
 const newLine = (id,img, category, name, price, description, idv4) => {
     var div = document.createElement('div');
@@ -19,17 +22,16 @@ const newLine = (id,img, category, name, price, description, idv4) => {
     return div;
 }
 
-const category_starwars = document.querySelector('[data-starwars]');
-const category_consolas = document.querySelector('[data-consolas]');
-const category_diversos = document.querySelector('[data-diversos]');
+const data_primera = document.querySelector('[data-primera]');
+// const category_consolas = document.querySelector('[data-consolas]');
+// const category_diversos = document.querySelector('[data-diversos]');
 
 productServices.listProduct().then((products) => {
     products.forEach(({id, img, category, name, price, description, idv4}) => {
         const newProducto = newLine(id,img, category, name, price, description, idv4);
-        const ver = toString(category);
-        if(category == "starwars") {category_starwars.appendChild(newProducto);}
-        else if (category == "consolas") {category_consolas.appendChild(newProducto);}
-        else if (category == "diversos") {category_diversos.appendChild(newProducto);}
+        if (categoryUrl == category) {data_primera.appendChild(newProducto);}
+        else if (categoryUrl == category) {data_primera.appendChild(newProducto);}
+        else if (categoryUrl == category) {data_primera.appendChild(newProducto);}
     });
 });
 

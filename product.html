@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bases.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="tudo">
+
+        <section class="header">
+            <div class="header__container container">
+                <div class="header__nav">
+                    <div class="header__busqueda__container">
+                        <a href="index.html" class="header__logo"><img src="assets/Logo.svg" ></a>
+                        <input class="header__busqueda" type="text" placeholder="¿Qué deseas buscar?">
+                        <img src="assets/bx-search.svg" class="header__lupa" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <section class="product container new">
+            <div class="product__img">
+                <img src="assets/cascosvg.svg" alt="">
+            </div>
+            <div class="product__info">
+                <h3 class="product__title">Producto XYZ</h4>
+                <h4 class="product__price">$ 60,00</h4>
+                <h4 class="product__description">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam
+                </h4>
+            </div>
+
+        </section> -->
+
+        <div class="product__dinamic" data-product></div>
+
+        <section class="products new">
+            <div class="products__container container">
+                <div class="products__category" id="starwars" >
+                    <div class="products__title">
+                        <h2>Productos Similiares</h2>
+                    </div>
+                    <div class="products__body" data-starwars>
+                        <div class="products__info__container">
+                            <img src="assets/casco.png" alt="">
+                            <div class="products__info">
+                                <h4 class="products__info__title">Producto XYZ</h4>
+                                <h4 class="products__info__price">$ 60,00</h4>
+                                <button type="submit" class="products__button" ><a href="#">Ver Producto </a></button>
+                            </div>
+                        </div>
+                        <div class="products__info__container">
+                            <img src="assets/casco.png" alt="">
+                            <div class="products__info">
+                                <h4 class="products__info__title">Producto XYZ</h4>
+                                <h4 class="products__info__price">$ 60,00</h4>
+                                <button type="submit" class="products__button" ><a href="#">Ver Producto </a></button>
+                            </div>
+                        </div>
+                        <div class="products__info__container">
+                            <img src="assets/casco.png" alt="">
+                            <div class="products__info">
+                                <h4 class="products__info__title">Producto XYZ</h4>
+                                <h4 class="products__info__price">$ 60,00</h4>
+                                <button type="submit" class="products__button" ><a href="#">Ver Producto </a></button>
+                            </div>
+                        </div>
+                        <div class="products__info__container">
+                            <img src="assets/casco.png" alt="">
+                            <div class="products__info">
+                                <h4 class="products__info__title">Producto XYZ</h4>
+                                <h4 class="products__info__price">$ 60,00</h4>
+                                <button type="submit" class="products__button" ><a href="#">Ver Producto </a></button>
+                            </div>
+                        </div>
+                        <div class="products__info__container">
+                            <img src="assets/casco.png" alt="">
+                            <div class="products__info">
+                                <h4 class="products__info__title">Producto XYZ</h4>
+                                <h4 class="products__info__price">$ 60,00</h4>
+                                <button type="submit" class="products__button" ><a href="#">Ver Producto </a></button>
+                            </div>
+                        </div>
+                        <div class="products__info__container">
+                            <img src="assets/casco.png" alt="">
+                            <div class="products__info">
+                                <h4 class="products__info__title">Producto XYZ</h4>
+                                <h4 class="products__info__price">$ 60,00</h4>
+                                <button type="submit" class="products__button" ><a href="#">Ver Producto </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__container container">
+                <div class="contact__info">
+                    <img src="assets/Logo.svg">
+                    <div class="contact__info__enlaces">
+                        <h4 class="contact__links"><a href="#">Quienes Somos</a></h4>
+                        <h4 class="contact__links"><a href="#">Politica de privacidad</a></h4>
+                        <h4 class="contact__links"><a href="#">Programa de fidelidad</a></h4>
+                        <h4 class="contact__links"><a href="#">Nuestras Tiendas</a></h4>
+                        <h4 class="contact__links"><a href="#">Quiero ser franquiciado</a></h4>
+                        <h4 class="contact__links"><a href="#">Anuncie Aqui</a></h4>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <h4>Hable con nosotros</h4>
+                    <input class="contact__input-nombre" type="text" placeholder="Nombre">
+                    <textarea class="contact__textarea-mensaje" type="text" cols="30" rows="10" placeholder="Escribe tu Mensaje"></textarea>
+                    <button type="submit" class="contact__button" ><a href="#">Enviar Mensaje</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer__container container">
+                <p>Desarrollado por Federico Pitton</p>
+                <p>2022</p>
+            </div>
+        </section>
+    </div>
+    <script src="js/controller/verProducto.js" type="module"></script>
+</body>
+
+</html>

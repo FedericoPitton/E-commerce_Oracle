@@ -1,0 +1,41 @@
+.product {
+    align-items: center;
+    align-items: center;
+    display: flex;
+    gap: 2%;
+    height: 100%;
+    padding-bottom: 2%;
+    padding-top: 5%;
+}
+
+.product__img {
+    width: 49%;
+}
+.product__img img {
+    width: 100%;
+}
+.product__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 49%;
+}
+
+.product__info h3  {
+    color: var(--letra-products-title);
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.product__price {
+    color: var(--letra-products-title);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.product__description {
+    color: var(--letra-products-title);
+    font-size: 2rem;
+    font-weight: 400;
+}
