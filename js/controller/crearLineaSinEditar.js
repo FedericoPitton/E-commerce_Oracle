@@ -6,7 +6,7 @@ const newLine = (id,img, category, name, price, description, idv4) => {
     div.setAttribute('data-id', idv4);
     div.setAttribute('data-category',category);
     
-    div.innerHTML =`<img src="${img}" alt="">
+    div.innerHTML =`<img src="${img}" alt="" class="products__info__img">
     <div class="products__info">
         <h4 class="products__info__title">${name}</h4>
         <h4 class="products__info__price">$ ${price}</h4>

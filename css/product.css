@@ -9,10 +9,13 @@
 }
 
 .product__img {
+    
     width: 49%;
 }
 .product__img img {
-    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    width: 39vw;
 }
 .product__info {
     display: flex;

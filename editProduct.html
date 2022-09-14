@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bases.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/newProduct.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Agregar Producto</title>
+</head>
+
+<body>
+    <div class="tudo">
+
+        <section class="header">
+            <div class="header__container container">
+                <div class="header__nav">
+                    <div class="header__busqueda__container">
+                        <a href="index.html" class="header__logo"><img src="assets/Logo.svg" ></a>
+                        <input class="header__busqueda" type="text" placeholder="¿Qué deseas buscar?">
+                        <img src="assets/bx-search.svg" class="header__lupa" alt="">
+                    </div>
+                </div>
+                <div class="header__login">
+                    <button type="submit" class="header__admin__button" ><a href="#">Menu Administrador</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newProduct">
+            
+            <form class="newProduct__form" data-form>
+                <h4>Agregar nuevo Producto</h4>
+                <input class="newProduct__img" type="text" placeholder="URL de imagen" data-img>
+                <input class="newProduct__category" type="text" placeholder="Categoria" data-category>
+                <input class="newProduct__name" type="text" placeholder="Nombre" data-name>
+                <input class="newProduct__price" type="text" placeholder="Precio" data-price>
+                <textarea class="newProduct__descripcion" type="text" cols="30" rows="10" placeholder="Descripcion" data-description></textarea>
+                <button type="submit" class="newProduct__button" >Actualizar Producto</button>
+            </form>
+
+        </section>
+        <section class="contact">
+            <div class="contact__container container">
+                <div class="contact__info">
+                    <img src="assets/Logo.svg">
+                    <div class="contact__info__enlaces">
+                        <h4 class="contact__links"><a href="#">Quienes Somos</a></h4>
+                        <h4 class="contact__links"><a href="#">Politica de privacidad</a></h4>
+                        <h4 class="contact__links"><a href="#">Programa de fidelidad</a></h4>
+                        <h4 class="contact__links"><a href="#">Nuestras Tiendas</a></h4>
+                        <h4 class="contact__links"><a href="#">Quiero ser franquiciado</a></h4>
+                        <h4 class="contact__links"><a href="#">Anuncie Aqui</a></h4>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <h4>Hable con nosotros</h4>
+                    <input class="contact__input-nombre" type="text" placeholder="Nombre">
+                    <textarea class="contact__textarea-mensaje" type="text" cols="30" rows="10" placeholder="Escribe tu Mensaje"></textarea>
+                    <button type="submit" class="contact__button" ><a href="#">Enviar Mensaje</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer__container container">
+                <p>Desarrollado por Federico Pitton</p>
+                <p>2022</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/controller/edit-delete.js"></script>
+</body>
+
+</html>

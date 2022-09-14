@@ -11,8 +11,8 @@ form.addEventListener('submit', (event) => {
     const description = document.querySelector('[data-description]').value;
     const idv4 = uuid.v4();
     
-    productServices.newProduct(img, category, name, price, description, idv4).then(respuesta => {
-        alert("Producto creado con exito");
+    productServices.newProduct(img, category, name, price, description, idv4).then(() => {
+        window.location.href= 'index.html';
     }).catch((error)=> console.log(error));
     
     document.querySelector('[data-img]').value = "";

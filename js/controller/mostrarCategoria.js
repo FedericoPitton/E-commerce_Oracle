@@ -9,19 +9,37 @@ const newLine = (id,img, category, name, price, description, idv4) => {
     div.setAttribute('data-id', idv4);
     div.setAttribute('data-category',category);
     
-    div.innerHTML =`<img src="${img}" alt="">
+    div.innerHTML =`<img src="${img}" alt="" class="products__info__img">
     <div class="products__info">
         <h4 class="products__info__title">${name}</h4>
         <h4 class="products__info__price">$ ${price}</h4>
         <h4 class="products__info__code">#${id}</h4>
-    </div>
-    <div class="products__edit-delete">
-        <a href="#"><img src="assets/delete.svg" class="products__delete"></a>
-        <a href="#"><img src="assets/edit.svg" class="products__edit"></a>
     </div>`
+
+    var div2 = document.createElement('div')
+    div2.classList.add('products__edit-delete');
+
+    var deleteIcon = document.createElement('a');
+    deleteIcon.innerHTML=`<img src="assets/delete.svg" class="products__delete" idv4=${idv4}>`
+    // deleteIcon.addEventListener('click', deleteF);
+
+    var editIcon = document.createElement('a');
+    editIcon.setAttribute('href', `editProduct.html?id=${id}`)
+    editIcon.innerHTML=`<img src="assets/edit.svg" class="products__edit" idv4=${idv4}>`
+    // editIcon.addEventListener('click', editF);
+
+    div2.appendChild(deleteIcon);
+    div2.appendChild(editIcon);
+    div.appendChild(div2);
     return div;
 }
 
+// function deleteF() {
+//     console.log("Hola");
+// }
+// function editF() {
+//     console.log("CHAU");
+// }
 const data_primera = document.querySelector('[data-primera]');
 // const category_consolas = document.querySelector('[data-consolas]');
 // const category_diversos = document.querySelector('[data-diversos]');
@@ -34,5 +52,6 @@ productServices.listProduct().then((products) => {
         else if (categoryUrl == category) {data_primera.appendChild(newProducto);}
     });
 });
+
 
 
