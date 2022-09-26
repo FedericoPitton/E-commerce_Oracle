@@ -9,14 +9,16 @@
 }
 
 .product__img {
-    
+
     width: 49%;
 }
+
 .product__img img {
     height: 30vw;
-    object-fit: cover;
+    object-fit: scale-down;
     width: 39vw;
 }
+
 .product__info {
     display: flex;
     flex-direction: column;
@@ -25,7 +27,7 @@
     width: 49%;
 }
 
-.product__info h3  {
+.product__info h3 {
     color: var(--letra-products-title);
     font-size: 3.25rem;
     font-weight: 700;

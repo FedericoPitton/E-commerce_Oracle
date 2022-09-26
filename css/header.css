@@ -1,3 +1,7 @@
+.header {
+    position: relative;
+}
+
 .header__container {
     align-items: center;
     display: flex;
@@ -14,6 +18,7 @@
     text-align: center;
     width: 55%;
 }
+
 .header__logo {
     width: 30%;
 }
@@ -26,6 +31,7 @@
     position: relative;
     width: 100%;
 }
+
 .header__busqueda {
     background: var(--background-busqueda);
     border: none;
@@ -37,13 +43,14 @@
     width: 60%;
 
 }
+
 .header__busqueda::placeholder {
     color: var(--letra-busqueda);
     font-size: 1.2rem;
     font-weight: 200;
 }
 
-.header__lupa  {
+.header__lupa {
     filter: invert(70%) sepia(0%) saturate(2416%) hue-rotate(321deg) brightness(90%) contrast(100%);
     position: absolute;
     right: 3%;
@@ -58,22 +65,22 @@
     color: var(--letra-blanco);
     text-decoration: none;
 }
+
 .header__login__button {
     background: var(--background-blanco);
     border: 1px solid var(--boton-login);
-    color:  var(--boton-login);
+    color: var(--boton-login);
     font-size: 1.3rem;
-    min-height: 100%;
     padding-bottom: 5%;
     padding-left: 23%;
     padding-right: 23%;
     padding-top: 5%;
-    text-decoration-style: none;
 }
+
 .header__admin__button {
     background: var(--background-blanco);
     border: 1px solid var(--boton-login);
-    color:  var(--boton-login);
+    color: var(--boton-login);
     font-size: 1.3rem;
     min-height: 100%;
     padding-bottom: 5%;
@@ -81,4 +88,13 @@
     padding-right: 10%;
     padding-top: 5%;
     text-decoration-style: none;
+}
+
+.header__login__button:hover,
+.header__login__button:active {
+    background: var(--boton-login);
+    color: var(--color-letra-blanco);
+    left: 0;
+    top: 0;
+    transition: .5s;
 }

@@ -1,5 +1,4 @@
-
-.banner { 
+.banner {
     background: url(../assets/banner-image.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,10 +25,12 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 .banner__container a {
     color: var(--letra-blanco);
     text-decoration: none;
 }
+
 .banner__button {
     background: var(--boton-login);
     border: none;
@@ -39,4 +40,14 @@
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 1.5%;
+}
+
+
+.banner__button:hover,
+.banner__button:active {
+    background: var(--color-letra-blanco);
+    color: var(--boton-login);
+    left: 0;
+    top: 0;
+    transition: .5s;
 }

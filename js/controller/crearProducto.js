@@ -1,6 +1,6 @@
-import  {productServices} from '../../js/services/product.services.js'
+import { productServices } from '../../js/services/product.services.js'
 
-const form = document.querySelector('[data-form]'); 
+const form = document.querySelector('[data-form]');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -10,11 +10,11 @@ form.addEventListener('submit', (event) => {
     const price = document.querySelector('[data-price]').value;
     const description = document.querySelector('[data-description]').value;
     const idv4 = uuid.v4();
-    
+
     productServices.newProduct(img, category, name, price, description, idv4).then(() => {
-        window.location.href= 'index.html';
-    }).catch((error)=> console.log(error));
-    
+        window.location.href = 'index.html';
+    }).catch((error) => console.log(error));
+
     document.querySelector('[data-img]').value = "";
     document.querySelector('[data-category]').value = "";
     document.querySelector('[data-name]').value = "";

@@ -1,31 +1,35 @@
-:root  {
+:root {
     --background-image-menu: linear-gradient(180deg, #052043 0%, #3569a8 100%);
-    --background-image-form: linear-gradient(180deg,  #3569a8 0%,#052043 100%);
-    --background-image-academic: radial-gradient( circle at 50%, #052043 0%, #3569a8 100%);
-    --background-image-about: linear-gradient(180deg, #3569a8 0%, #527aab 30%, #eaf6ff 100% );
-    --background-footer:#052043;
+    --background-image-form: linear-gradient(180deg, #3569a8 0%, #052043 100%);
+    --background-image-academic: radial-gradient(circle at 50%, #052043 0%, #3569a8 100%);
+    --background-image-about: linear-gradient(180deg, #3569a8 0%, #527aab 30%, #eaf6ff 100%);
+    --background-footer: #052043;
     --color-letra-gradient: linear-gradient(180deg, white 15%, black 50%);
     --background-general: #EAF2FD;
 
-    
-    --background-blanco-pastel:#F5F5F5;
-    --background-azul:#527aab;
+
+    --background-blanco-pastel: #F5F5F5;
+    --background-azul: #527aab;
 
     --background-color-menu: #072347;
     --background-color-about: #3569a8;
     --color-letra-blanco: #f0f8ff;
 
-    --background-contact:#EAF2FD;
-    --boton-login:#2A7AE4;
+    --background-contact: #EAF2FD;
+    --boton-login: #2A7AE4;
     --letra-busqueda: #A2A2A2;
-    --letra-products-title:#464646;
+    --letra-products-title: #464646;
     --background-busqueda: #F5F5F5;
     --background-blanco: #ffffff;
     --montserrat: 'Montserrat', sans-serif;
     --open-sans: 'Open Sans', sans-serif;
 }
 
-.body  {
+button {
+    border-radius: 5px;
+}
+
+.body {
     background: var(--background-blanco);
     font-family: var(--open-sans);
     height: 100%;
@@ -35,7 +39,10 @@
 
 .tudo {
     font-family: var(--open-sans);
+    height: 100%;
+    width: 100%;
 }
+
 .container {
     margin: auto;
     padding-left: 10%;
@@ -43,6 +50,4 @@
 }
 
 
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}

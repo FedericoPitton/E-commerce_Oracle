@@ -26,11 +26,11 @@ const newLine = (id, img, category, name, price, description, idv4) => {
 const obtenerInformacion = () => {
     const url = new URL(window.location);
     const id = (url.searchParams.get('id'));
-    productServices.listProduct().then(product =>  {
+    productServices.listProduct().then(product => {
         product.forEach(element => {
-            if(element.idv4 === id) {
-                const div =document.querySelector('[data-product]');
-                const section = newLine(element.id,element.img,element.category,element.name,element.price,element.description,element.idv4);
+            if (element.idv4 === id) {
+                const div = document.querySelector('[data-product]');
+                const section = newLine(element.id, element.img, element.category, element.name, element.price, element.description, element.idv4);
                 div.appendChild(section);
             }
 

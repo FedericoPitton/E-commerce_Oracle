@@ -1,15 +1,17 @@
-.login__container  {
-    background:var(--background-busqueda);
+.login__container {
+    background: var(--background-busqueda);
     display: flex;
     height: 55vh;
     justify-content: space-between;
     padding-bottom: 3%;
     padding-top: 3%;
 }
-.login__button a{
+
+.login__button a {
     color: var(--letra-blanco);
     text-decoration: none;
 }
+
 .login__form {
     display: flex;
     flex-direction: column;
@@ -18,6 +20,7 @@
     margin: auto;
     width: 30%;
 }
+
 .login__form input {
     border: none;
     border-radius: 4px;
@@ -34,14 +37,16 @@
     font-weight: 700;
 }
 
-.login__email, .login__password {
+.login__email,
+.login__password {
     box-shadow: 0px 2px var(--letra-busqueda);
     font-size: 1.3rem;
     height: 19%;
     padding-left: 2%;
 }
 
-.login__email::placeholder, .login__password::placeholder{
+.login__email::placeholder,
+.login__password::placeholder {
     color: var(--letra-busqueda);
     font-size: 1rem;
     margin: auto;

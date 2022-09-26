@@ -1,0 +1,13 @@
+.completed {
+    background: var(--background-contact);
+    height: 100%;
+    min-height: 100%;
+    width: 80%;
+}
+
+.completed__container {
+    background: var(--background-blanco);
+    display: flex;
+    display: auto;
+    width: 50%;
+}
